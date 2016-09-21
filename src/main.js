@@ -4,9 +4,19 @@ function getGitref() {
     return 0;
 }
 
+function getBarcodeNumbers(text) {
+    return text.match(/\b[0-9]{14}\b/g);
+}
+
 function createLabels() {
 
-    var barcodes = document.body.innerText.match(/\b[0-9]{14}\b/g);
+    var barcodes = [];
+    var text = getSelection();
+    if (text !== "") {
+        barcodes = getBarcodeNumbers(text);
+    } else {
+        barcodes = getBarcodeNumbers(document.body.innerText);
+    }
 
     if (barcodes !== null) {
 
@@ -268,6 +278,11 @@ function appendStylesheet(doc) {
     }
 
     head.appendChild(style);
+}
+
+function getSelection() {
+    var selection = "";
+    return window.getSelection().toString();
 }
 
 if (window.location.href.toLowerCase().indexOf("gitref") > -1) {

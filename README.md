@@ -1,5 +1,13 @@
 # Koha barcode printer bookmarklet
-A bookmarklet for generating barcodes in LS.ext (has a dependency on the REST API that isn't standard in Koha).
+A bookmarklet for generating labels in LS.ext (has a dependency on the REST API that isn't standard in Koha).
+
+In any view in Koha that contains 14-digit numeric barcodes, click the bookmarklet and a new window will open that contains the formatted labels.
+
+In views containing many barcode numbers, a label will be created for each barcode; if an area of text is selected, only labels will be created for the barcodes in the area of selected text.
+
+Note that discovery of barcodes is by a simple match of 14 digits surrounded by boundaries (whitespace or punctuation).
+
+The bookmarklet will only work inside Koha and fails silently if there are no 14-digit barcodes in the view.
 
 Creates a 38 mm x 90 mm label with the following information:
 
@@ -14,7 +22,7 @@ Creates a 38 mm x 90 mm label with the following information:
 - An interleaved 2 of 5 rendition of the barcode
 - A spine-label variant of the call number split according to length (and possibly cut if it is very long)
 
-The label can be printed directly to suitable label printers when you click on any view in Koha that has a numeric string that represents a barcode.
+The label can be printed directly to suitable label printers.
 
 ##What is a bookmarklet?
 A bookmarklets are bookmarks that hide executable javascript snippets that do things in your webbrowser. This should sound a bit worrying; we're using them for good here, honest.
