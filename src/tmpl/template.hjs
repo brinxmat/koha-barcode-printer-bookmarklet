@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <h1><span>{{title}}</span> (<span>{{revisionText}}</span> <span>{{revision}}</span>)</h1>
+    <span>{{copyText}}</span><a href="{{javascript}}">{{bookmarkletName}}</a>
+  </body>
+</html>

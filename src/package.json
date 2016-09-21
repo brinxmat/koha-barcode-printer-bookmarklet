@@ -1,0 +1,17 @@
+{
+  "name": "koha-return-receipt-bookmarklet",
+  "version": "1.0.0",
+  "description": "Creates a bookmarklet that can be used to print receipts from Koha manual returns",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rurik.greenall@computas.com",
+  "license": "MIT",
+  "dependencies": {
+    "bookmarklet": "^0.0.6",
+    "handlebars": "^4.0.5",
+    "node-git-version": "^0.1.2"
+  }
+}
+
