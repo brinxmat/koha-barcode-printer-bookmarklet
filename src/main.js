@@ -84,7 +84,7 @@ function createLabels() {
                                         jQuery("<span/>", {
                                             "id": "key_" + barcode,
                                             "class": "call-number",
-                                            "text": value
+                                            "text": ellipsis(value, 25)
                                         }).appendTo(currentLabel);
                                         jQuery("<span/>", {
                                             "id": key + "_" + barcode,
