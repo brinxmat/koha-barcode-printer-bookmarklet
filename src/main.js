@@ -222,7 +222,7 @@ function getStylesheet() {
         + "        .kommune { position: absolute; top: 90px; left: 80px; transform: rotate(90deg); transform-origin: 0 0px; width: 40px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
         + "        .biblio { position: absolute; top: 135px; left: 80px; transform: rotate(90deg); transform-origin: 0 0px; width: 70px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
         + "        .copy-number { position: absolute; top: 210px; left: 80px; transform: rotate(90deg); transform-origin: 0 0px; width: 40px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
-        + "        .spine { position: absolute; top:260px; left: 10px; font-size: 16px; width: 34mm; overflow-wrap: normal; }";
+        + "        .spine { position: absolute; top:280px; left: 10px; font-size: 16px; width: 34mm; overflow-wrap: normal; }";
 }
 
 function padding(number) {
