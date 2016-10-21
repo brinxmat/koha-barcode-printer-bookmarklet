@@ -66,12 +66,6 @@ function createLabels() {
                                         bcs.innerHTML = "$(document).ready(function(){JsBarcode(\"#barcode_" + barcode + "\").init();})";
                                         doc.body.appendChild(bcs);
 
-                                        jQuery("<span/>", {
-                                            "id": "kommune_" + barcode,
-                                            "class": "kommune",
-                                            "text": "0301"
-                                        }).appendTo(currentLabel);
-
                                         break;
                                     case "biblio":
                                         jQuery("<span/>", {
@@ -90,6 +84,13 @@ function createLabels() {
                                             "id": key + "_" + barcode,
                                             "class": "spine",
                                             "html": fixSpineNumber(value)
+                                        }).appendTo(currentLabel);
+                                        break;
+                                    case "codedLocationQualifier":
+                                        jQuery("<span/>", {
+                                            "id": key + "_" + barcode,
+                                            "class": "main-library-department",
+                                            "text": value
                                         }).appendTo(currentLabel);
                                         break;
                                     case "copyNumber":
@@ -219,7 +220,7 @@ function getStylesheet() {
         + "        .call-number { position: absolute; top: 10px; left: 100px; transform: rotate(90deg); transform-origin: 0 0px; width: 280px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
         + "        .publication-date { position: absolute; top: 10px; left: 80px; transform: rotate(90deg); transform-origin: 0 0px; width: 40px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
         + "        .home-branch { position: absolute; top: 57px; left: 80px; transform: rotate(90deg); transform-origin: 0 0px; width: 40px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
-        + "        .kommune { position: absolute; top: 90px; left: 80px; transform: rotate(90deg); transform-origin: 0 0px; width: 40px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
+        + "        .main-library-department { position: absolute; top: 90px; left: 80px; transform: rotate(90deg); transform-origin: 0 0px; width: 40px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
         + "        .biblio { position: absolute; top: 135px; left: 80px; transform: rotate(90deg); transform-origin: 0 0px; width: 70px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
         + "        .copy-number { position: absolute; top: 210px; left: 80px; transform: rotate(90deg); transform-origin: 0 0px; width: 40px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
         + "        .spine { position: absolute; top:280px; left: 10px; font-size: 16px; width: 34mm; overflow-wrap: normal; }";
