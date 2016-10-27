@@ -53,9 +53,10 @@ function createLabels() {
                                         barcodeSvg.setAttribute("jsbarcode-format", "ITF");
                                         barcodeSvg.setAttribute("jsbarcode-value", barcode);
                                         barcodeSvg.setAttribute("jsbarcode-width", 2);
-                                        barcodeSvg.setAttribute("jsbarcode-height", 60);
-                                        barcodeSvg.setAttribute("jsbarcode-fontsize", 14);
-                                        barcodeSvg.setAttribute("margin", 0);
+                                        barcodeSvg.setAttribute("jsbarcode-height", 55);
+                                        barcodeSvg.setAttribute("jsbarcode-fontsize", 18);
+                                        barcodeSvg.setAttribute("jsbarcode-fontOptions", "bold");
+                                        barcodeSvg.setAttribute("jsbarcode-margin", 0);
 
                                         barcodeSvg.setAttribute("class", "barcode");
 
@@ -218,18 +219,18 @@ function getStylesheet() {
         + "          border-spacing: 0;"
         + "        }"
         + "        @page {margin: 0px; size: 38mm 90mm;}"
-        + "        .label { border: 1px solid #00F; width: 50mm; height: 132mm; position: relative; left: 0px; page-break-after: always; font-size: 18px; font-family: sans-serif;}"
-        + "        .barcode { z-index: -1; position: absolute; top: -45px; width: 240px; left: 40px; transform: rotate(90deg); transform-origin: left; -webkit-transform: rotate(90deg); -webkit-transform-origin: left;}"
+        + "        .label { border: 1px solid #FFFFFF; width: 50mm; height: 132mm; position: relative; left: 0px; page-break-after: always; font-size: 18px; font-family: sans-serif;}"
+        + "        .barcode { z-index: -1; position: absolute; top: -27px; width: 265px; left: 40px; transform: rotate(90deg); transform-origin: left; -webkit-transform: rotate(90deg); -webkit-transform-origin: left;}"
         + "        .creator { position: absolute; top: 10px; left: 140px; transform: rotate(90deg); transform-origin: 0 0px; width: 280px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
         + "        .title { position: absolute; top: 10px; left: 120px; transform: rotate(90deg); transform-origin: 0 0px; width: 280px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
         + "        .call-number { position: absolute; top: 10px; left: 160px; transform: rotate(90deg); transform-origin: 0 0px; width: 280px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
         + "        .placement { position: absolute; top: 10px; left: 180px; transform: rotate(90deg); transform-origin: 0 0px; width: 280px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
         + "        .publication-date { position: absolute; top: 10px; left: 100px; transform: rotate(90deg); transform-origin: 0 0px; width: 40px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
-        + "        .home-branch { position: absolute; top: 57px; left: 100px; transform: rotate(90deg); transform-origin: 0 0px; width: 40px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
-        + "        .main-library-department { position: absolute; top: 90px; left: 100px; transform: rotate(90deg); transform-origin: 0 0px; width: 40px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
-        + "        .biblio { position: absolute; top: 135px; left: 100px; transform: rotate(90deg); transform-origin: 0 0px; width: 70px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
-        + "        .copy-number { position: absolute; top: 210px; left: 100px; transform: rotate(90deg); transform-origin: 0 0px; width: 40px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
-        + "        .spine { position: absolute; top:420px; left: 10px; font-size: 16px; width: 34mm; overflow-wrap: normal; }";
+        + "        .home-branch { position: absolute; top: 62px; left: 100px; transform: rotate(90deg); transform-origin: 0 0px; width: 40px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
+        + "        .main-library-department { position: absolute; top: 100px; left: 100px; transform: rotate(90deg); transform-origin: 0 0px; width: 40px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
+        + "        .biblio { position: absolute; top: 145px; left: 100px; transform: rotate(90deg); transform-origin: 0 0px; width: 70px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
+        + "        .copy-number { position: absolute; top: 249px; left: 100px; transform: rotate(90deg); transform-origin: 0 0px; width: 40px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
+        + "        .spine { position: absolute; top:480px; left: 180px; font-size: 16px; width: 34mm; overflow-wrap: normal; transform: rotate(180deg); transform-origin: 0 0px; -webkit-transform: rotate(180deg); -webkit-transform-origin: 0 0px; }";
 }
 
 function padding(number) {
