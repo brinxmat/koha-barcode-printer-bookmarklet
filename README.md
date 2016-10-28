@@ -9,17 +9,18 @@ Note that discovery of barcodes is by a simple match of 14 digits surrounded by 
 
 The bookmarklet will only work inside Koha and fails silently if there are no 14-digit barcodes in the view.
 
-Creates a 38 mm x 90 mm label with the following information:
+Creates a 50 mm x 132 mm label with the following information:
 
 - Creator name (cut at 25 characters)
 - Title (cut at 25 characters)
 - Call number (cut at 25 characters)
 - Publication year
 - Home branch
-- Oslo's kommunenummer (0301)
+- Main branch department
+- Collection/Placement
 - Biblionumber
 - Copy number (left padded to three characters)
-- An interleaved 2 of 5 rendition of the barcode
+- An interleaved 2 of 5 barcode
 - A spine-label variant of the call number split according to length (and possibly cut if it is very long)
 
 The label can be printed directly to suitable label printers.
