@@ -219,7 +219,7 @@ function getStylesheet() {
         + "          border-spacing: 0;"
         + "        }"
         + "        @page {margin: 0px; size: 50mm 132mm;}"
-        + "        .label { border: 1px solid #FFFFFF; width: 50mm; height: 132mm; position: relative; left: 0px; page-break-after: always; font-size: 18px; font-family: sans-serif;}"
+        + "        .label { border: 1px solid #000000; width: 50mm; height: 132mm; position: relative; left: 0px; page-break-after: always; font-size: 18px; font-family: sans-serif;}"
         + "        .barcode { border: 1px solid #000000; z-index: -1; position: absolute; top: -27px; width: 265px; left: 40px; transform: rotate(90deg); transform-origin: left; -webkit-transform: rotate(90deg); -webkit-transform-origin: left;}"
         + "        .creator { border: 1px solid #000000; position: absolute; top: 10px; left: 140px; transform: rotate(90deg); transform-origin: 0 0px; width: 280px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
         + "        .title { border: 1px solid #000000; position: absolute; top: 10px; left: 120px; transform: rotate(90deg); transform-origin: 0 0px; width: 280px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
