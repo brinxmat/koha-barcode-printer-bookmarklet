@@ -219,7 +219,7 @@ function getStylesheet() {
         + "          border-spacing: 0;"
         + "        }"
         + "        @page {margin: 0px; size: 50mm 132mm;}"
-        + "        .label { border: 1px solid #FFFFFF; width: 50mm; height: 132mm; position: relative; left: 0px; page-break-after: always; font-size: 18px; font-family: sans-serif;}"
+        + "        .label { border: 1px solid #000000; width: 50mm; height: 132mm; position: relative; left: 0px; page-break-after: always; font-size: 18px; font-family: sans-serif;}"
         + "        .barcode { z-index: -1; position: absolute; top: -27px; width: 265px; left: 40px; transform: rotate(90deg); transform-origin: left; -webkit-transform: rotate(90deg); -webkit-transform-origin: left;}"
         + "        .creator { position: absolute; top: 10px; left: 140px; transform: rotate(90deg); transform-origin: 0 0px; width: 280px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
         + "        .title { position: absolute; top: 10px; left: 120px; transform: rotate(90deg); transform-origin: 0 0px; width: 280px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
@@ -230,7 +230,7 @@ function getStylesheet() {
         + "        .main-library-department { position: absolute; top: 100px; left: 100px; transform: rotate(90deg); transform-origin: 0 0px; width: 40px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
         + "        .biblio { position: absolute; top: 145px; left: 100px; transform: rotate(90deg); transform-origin: 0 0px; width: 70px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
         + "        .copy-number { position: absolute; top: 249px; left: 100px; transform: rotate(90deg); transform-origin: 0 0px; width: 40px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
-        + "        .spine { z-index: 1000; border: 1px solid #000000; position: absolute; top:400px; left: 180px; font-size: 18px; width: 46mm; height: 30mm; overflow-wrap: normal; transform: rotate(180deg); transform-origin: 0 0px; -webkit-transform: rotate(180deg); -webkit-transform-origin: 0 0px; }";
+        + "        .spine { z-index: 1000; position: absolute; top: 95mm; left: 5px; font-size: 18px; width: 46mm; height: 30mm; overflow-wrap: normal; transform: rotate(180deg); transform-origin: 50% 50%; -webkit-transform: rotate(180deg); -webkit-transform-origin: 50% 50%; }";
 }
 
 function padding(number) {
