@@ -230,7 +230,7 @@ function getStylesheet() {
         + "        .main-library-department { position: absolute; top: 100px; left: 100px; transform: rotate(90deg); transform-origin: 0 0px; width: 40px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
         + "        .biblio { position: absolute; top: 145px; left: 100px; transform: rotate(90deg); transform-origin: 0 0px; width: 70px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
         + "        .copy-number { position: absolute; top: 249px; left: 100px; transform: rotate(90deg); transform-origin: 0 0px; width: 40px; -webkit-transform: rotate(90deg); -webkit-transform-origin: 0 0px; }"
-        + "        .spine { z-index: 1000; position: absolute; top:480px; left: 180px; font-size: 18px; width: 46mm; height: 30mm; overflow-wrap: normal; transform: rotate(180deg); transform-origin: 0 0px; -webkit-transform: rotate(180deg); -webkit-transform-origin: 0 0px; }";
+        + "        .spine { z-index: 1000; border: 1px solid #000000; position: absolute; top:400px; left: 180px; font-size: 18px; width: 46mm; height: 30mm; overflow-wrap: normal; transform: rotate(180deg); transform-origin: 0 0px; -webkit-transform: rotate(180deg); -webkit-transform-origin: 0 0px; }";
 }
 
 function padding(number) {
