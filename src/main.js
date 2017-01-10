@@ -43,12 +43,6 @@ function createLabels () {
 
             var currentLabel = jQuery("<div/>", { "id": currentLabelId, "class": "label" });
 
-//            jQuery.getJSON(url, function (data) {
-//              jQuery.each(data, function (key, value) {
-//                getLabelElement(doc, currentLabel, currentLabelId, key, value, barcode);
-//              });
-//            });
-
             jQuery.ajax({
               url: url,
               datatype: 'json',
